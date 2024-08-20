@@ -1,0 +1,12 @@
+[user]
+  email = flow@hrmm.xyz
+	name = Yongwook Choi
+	signingkey = 373AE12063218475
+[init]
+  defaultBranch = main
+[push]
+  autoSetupRemote = true
+[merge]
+  conflictstyle = diff3
+[commit]
+	gpgsign = true

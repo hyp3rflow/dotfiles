@@ -1,0 +1,13 @@
+export GPG_TTY=$(tty)
+
+# brew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# asdf completion
+fpath=(${ASDF_DIR}/completions $fpath)
+autoload -Uz compinit && compinit
+
+# esmeta
+export ESMETA_HOME=~/flow/plrg/esmeta
+export PATH=$ESMETA_HOME/bin:$PATH
+source $ESMETA_HOME/.completion
